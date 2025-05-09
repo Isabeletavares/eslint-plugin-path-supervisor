@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const rule = require("../../../lib/rules/path-supervisor"),
+const rule = require("../../../lib/rules/path-checker"),
   RuleTester = require("eslint").RuleTester;
 
 
@@ -19,7 +19,7 @@ const rule = require("../../../lib/rules/path-supervisor"),
 const ruleTester = new RuleTester({
   parserOptions: {ecmaVersion: 6, sourceType: 'module'}
 });
-ruleTester.run("path-supervisor", rule, {
+ruleTester.run("path-checker", rule, {
   valid: [
     {
       filename: 'C:\\Users\\maryna\Desktop\\javascript\\production_project\\src\\entities\\Article',

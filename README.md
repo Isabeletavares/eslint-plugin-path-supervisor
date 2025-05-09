@@ -47,7 +47,7 @@ You will need to manually configure the rules you want to apply in your `.eslint
 ```json
 {
   "rules": {
-    "path-supervisor/path-supervisor": ["error", { "alias": "@" }],
+    "path-supervisor/path-checker": ["error", { "alias": "@" }],
     "path-supervisor/layer-imports": [
       "error",
       {
@@ -89,14 +89,14 @@ For example, a `features` file can import from `shared` or `entities` but not fr
 
 
 
-### `path-supervisor/path-supervisor`
+### `path-supervisor/path-checker`
 
 **Type**: problem.
 
 This rule enforces that within the same "slice" of the project, all imports must use relative paths.
 
 #### Rule Details
-The `path-supervisor` rule ensures that all paths within a single slice (e.g., `entities/Article`) are relative. 
+The `path-checker` rule ensures that all paths within a single slice (e.g., `entities/Article`) are relative. 
 This prevents the use of absolute imports within the same module or feature slice.
 
 If an absolute path is detected within the same slice, the rule can automatically fix it by replacing it with a relative path.
@@ -116,7 +116,7 @@ The rule will automatically fix violations by replacing the import path with the
 
 ## Why Use These Rules?
 - `layer-imports`: Helps enforce a well-defined project architecture by restricting imports between layers, improving project scalability and maintainability.
-- `path-supervisor`: Ensures consistency by enforcing relative paths within the same slice, making code more readable and modular.
+- `path-checker`: Ensures consistency by enforcing relative paths within the same slice, making code more readable and modular.
 - `public-api-imports`: Promotes encapsulation by restricting access to internal files and enforcing imports from the public API, while also ensuring that test utilities are used appropriately.
 
 

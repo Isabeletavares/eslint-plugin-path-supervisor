@@ -1,11 +1,19 @@
 {
   "name": "eslint-plugin-path-supervisor",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Plugin for checking the rules of absolute and relative paths in project",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "path",
+    "eslint-rules",
+    "ast-tree",
+    "ast",
+    "public-api-import",
+    "fsd",
+    "feature-sliced-design",
+    "layer-imports"
   ],
   "author": "Maryna Shavlak",
   "main": "./lib/index.js",
